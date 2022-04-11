@@ -1,0 +1,25 @@
+/*********************************************
+ * OPL 20.1.0.0 Data
+ * Author: Samuel Chan
+ * Creation Date: Feb 27, 2022 at 2:28:31 PM
+ *********************************************/
+SheetConnection sheet("50c_3n_5.xlsx");
+//SheetConnection sheetData("32c_3n_5.xlsx");  
+
+clientNum =50;
+nurseNum = 3;
+dayNum = 10;
+maxq_dif = 240;
+
+demand from SheetRead(sheet,"'demand data'!B2:BA2");
+cost from SheetRead(sheet,"'cost data'!B2:BA53");
+start from SheetRead(sheet,"'start'!B2:K53");
+end from SheetRead(sheet,"'end'!B2:K53");
+
+E = 0;
+L = 480;
+
+M = 5000;
+
+//start to SheetWrite(sheetData, "'start'!B2:K35");
+//end to SheetWrite(sheetData, "'end'!B2:K35");
